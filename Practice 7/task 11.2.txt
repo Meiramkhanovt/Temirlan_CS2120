@@ -1,0 +1,16 @@
+list1 = [1, 2, 3, 4, 5, 6, 7]
+
+print(list1)
+print("maximum of the 1st list:", max(list1))
+
+list2 = [8, 9, 10, 11, 12, 13, 14]
+
+print(list2)
+print("maximum of the 2nd list:", max(list2))
+
+index1 = list1.index(max(list1))
+index2 = list2.index(max(list2))
+
+list1[index1], list2[index2] = list2[index2], list1[index1]
+
+print(list1, list2)
